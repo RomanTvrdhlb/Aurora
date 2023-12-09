@@ -1,0 +1,13 @@
+.first-section{
+    position: relative;
+    padding-bottom: clamp(20px, 2.6316vw, 30px);
+    
+    &__box{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+        grid-gap: clamp(20px, 2.193vw, 25px);
+    }
+
+
+}

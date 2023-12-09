@@ -1,0 +1,36 @@
+.h2o-main-box{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+
+    p{
+      color: rgba(var(--cl-a),1.0);
+      font-size: 14px;
+      line-height: 1.34;
+      font-family: var(--font-family);
+      font-weight: 400;
+      
+      b{
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+
+    &__image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--mode{
+        padding: clamp(5px, 1.1765vw, 16px) 0 clamp(16px, 2.3529vw, 32px);
+      }
+    }
+
+    &--mode{
+      grid-gap: 0;
+
+      .h2o-main-subtitle{
+        padding: 8px 0;
+      }
+    }
+}

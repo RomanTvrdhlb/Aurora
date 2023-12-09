@@ -1,0 +1,217 @@
+.subtitle-black{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  *{
+    padding: 8px 15px 7px;
+    background-color: rgba(var(--bg-h),1.0);
+  }
+    font-family: var(--font-family);
+    color: rgba(var(--cl-a),1.0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 700;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      background-color: rgba(var(--bg-h),1.0);
+    }
+}
+
+.rating{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 7px;
+
+  &__value{
+    margin-bottom: -2px;
+    font-size: clamp(14px, 1.4035vw, 16px);
+    line-height: 100%;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: rgba(var(--bg-a),1.0);
+  }
+
+  &__list{
+    display: flex;
+    grid-gap: 2px;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+.h2o-main-subtitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(var(--cl-a),1.0);
+  font-size: 14px;
+}
+
+.h2o-main-title {
+  color: rgba(var(--cl-a), 1);
+  font-family: var(--font-family);
+  font-size: clamp(18px, 1.875vw, 27px);
+  line-height: 120%;
+  font-weight: 700;
+  padding-left: 19px;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 4px;
+    background: linear-gradient(91deg,#0095ff,#0855c4);
+    box-shadow: 0 6px 22px #056dda4d;
+    height: 100%;
+    border-radius: 12px;
+  }
+
+}
+
+.h2o-main-link{
+  color: rgba(var(--cl-g),1.0);
+  text-decoration: underline;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .3s;
+  &:hover{
+    color: rgba(var(--cl-f),1.0);
+  }
+}
+
+.h2o-text-list{
+  display: flex;
+  flex-direction: column;
+  padding-left: 26px;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    grid-gap: 5px;
+    color: rgba(var(--cl-c),1.0);
+
+    &::before{
+      content: "";
+      left: -11px;
+      position: absolute;
+      top: 5px;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 5px solid var(--br-e);
+    }
+  }
+
+  &--mode{
+    padding-left: 11px;
+  }
+}
+
+.h2o-main-list{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+  counter-reset: li;
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 20px;
+    grid-gap: 10px;
+
+    &::before{
+      position: absolute;
+      left: 0;
+      top: -2px;
+      content: counters(li, '') '.';
+      counter-increment: li;
+      font-size: 15px;
+      font-family: var(--font-family2);
+      font-weight: 800;
+      color: rgba(var(--cl-a),1.0);
+    }
+  }
+}
+
+table:not([class]){
+    border-radius: 8px;
+		overflow: hidden;
+    width:100%;
+		border-collapse:collapse;
+		padding:5px;
+
+    @include mobile{
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: calc(100% + 32px);
+      padding: 0 16px;
+      margin-left: -16px;
+    }
+
+    thead,tbody{
+      @include mobile{
+       width: 100%;
+      }
+      
+    }
+
+    tbody{
+      tr:nth-child(even) td{
+      
+        background: rgba(var(--bg-g),1.0);
+      }
+    }
+   
+    tr{    
+      @include mobile{
+        width: 100%;
+      }
+    }
+
+    th {
+        padding: 15px 5px;
+        color: rgba(var(--cl-a), 1);
+        font-family: var(--font-family);
+        font-size: clamp(14px, 1.1111vw, 16px);
+        font-weight: 700;
+        background-color: rgba(var(--bg-h),1.0);
+        
+        @include mobile{
+          width: 100%;
+        }
+      }
+
+    td {
+      text-align:center;
+      padding:10px;
+      background:rgba(var(--bg-h),1.0);
+      color: rgba(var(--cl-a), 1);
+      font-family: var(--font-family);
+      font-size: clamp(14px, 1.1111vw, 16px);
+      font-weight: 400;
+      background-color: rgba(var(--bg-f),1.0);
+    }
+}
+
+

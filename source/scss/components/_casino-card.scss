@@ -1,0 +1,193 @@
+.casino-card {
+  display: flex;
+  grid-gap: 10px;
+  border: 1px solid var(--br-e);
+  border-radius: 10px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  &__bonus {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    align-items: center;
+    grid-gap: 10px;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(180deg, #ffc530 0, #f00 100%);
+    border-radius: 10px;
+
+    p {
+      font-size: clamp(14px, 1.4035vw, 16px);
+      line-height: 130%;
+      font-weight: bold;
+      color: rgba(var(--cl-a), 1);
+      font-family: var(--font-family);
+    }
+
+    &--mode{
+        padding: 0 12px;
+        min-height: 54px;
+        background: rgba(var(--bg-l),1.0);
+        border-radius: 5px;
+
+        p{
+            font-weight: 400;
+            color: rgba(var(--cl-j),1.0);
+        }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 110%;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    color: rgba(var(--cl-g), 1);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-position: under;
+  }
+
+  &__label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(var(--cl-a),1.0);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    position: absolute;
+    display: flex;
+    padding: 4px 10px;
+    left: -2px;
+    z-index: 3;
+    top: -10px;
+
+    &::before {
+      content: "";
+      background: linear-gradient(180deg, #07f133 0, #2c9840 100%);
+      box-shadow: 0 4px 4px rgb(0 0 0 / 35%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: skew(-15deg);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -2px;
+      bottom: -4px;
+      border: 2px solid transparent;
+      border-top: 2px solid var(--br-h);
+      border-right: 2px solid var(--br-h);
+    }
+  }
+
+  &__attainment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 100%;
+    font-family: var(--font-family);
+    white-space: nowrap;
+    color: rgba(var(--cl-h), 1);
+    border: 1px solid var(--br-f);
+    border-radius: 2px;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  &__wrapp {
+    align-items: flex-end;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius: 10px;
+    width: 230px;
+    height: 100%;
+    background-color: rgba(var(--bg-e), 1);
+  }
+
+  &__image {
+    border-radius: 10px 10px 0 0;
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__inner {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    position: relative;
+    padding: clamp(5px, 0.8772vw, 10px) clamp(5px, 0.8772vw, 10px)
+      clamp(8px, 1.3158vw, 15px);
+    &::before {
+      content: "";
+      position: absolute;
+      top: -28px;
+      left: 0;
+      width: 100%;
+      height: 28px;
+      background: linear-gradient(180deg, rgba(36, 37, 38, 0) 0, #242526 100%);
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+  }
+
+  &__number {
+    font-size: clamp(16px, 1.5789vw, 18px);
+    line-height: 120%;
+    font-weight: bold;
+    color: rgba(var(--cl-f), 1);
+    font-family: var(--font-family);
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-size: clamp(16px, 1.5789vw, 18px);
+    line-height: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(var(--cl-a), 1);
+  }
+}

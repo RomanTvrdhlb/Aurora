@@ -1,0 +1,23 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 12px;
+
+  &__title {
+    font-weight: bold;
+    font-size: clamp(18px, 2.1053vw, 24px);
+    line-height: 120%;
+    color: rgba(var(--cl-d), 1);
+    font-family: var(--font-family);
+  }
+  h1{
+    font-size: clamp(26px, 2.9825vw, 34px);
+  }
+
+  p{
+    font-family: var(--font-family);
+    color: rgba(var(--cl-d), 1);
+    font-size: clamp(14px, 1.4035vw, 16px);
+    line-height: 130%;
+  }
+}

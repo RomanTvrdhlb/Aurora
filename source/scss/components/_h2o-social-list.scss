@@ -1,0 +1,59 @@
+.h2o-social-list {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+
+  &__link {
+
+    transition: all .4s;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 35px;
+      height: 35px;
+      top: 50%;
+      left: 50%;
+      transition: all .4s;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      border-radius: 10px;
+      background: linear-gradient(108.65deg, #91b8ef 2.63%, #4288ed 101.05%),
+        linear-gradient(135deg, #ff4f4f 0%, #f00 100%);
+      box-shadow: 0 5px 16px #4cb9f64d;
+    }
+    &:hover{
+            &::before{
+                width: 38px;
+                height: 38px;
+            }
+    }
+
+    &.h2o-icon-tg {
+      &::before {
+        background: linear-gradient(240.2deg, #0fb1d6 0%, #08c 61.34%);
+        box-shadow: 0 5px 16px #4ca2f64d;
+      }
+    }
+
+    &.h2o-icon-youtube {
+      &::before {
+        background: linear-gradient(135deg, #ff4f4f 0%, #f00 100%);
+        box-shadow: 0 5px 16px #f64c4c4d;
+      }
+    }
+
+    &.h2o-icon-inst {
+      &::before {
+        background: linear-gradient(
+          214.99deg,
+          #7e2bf4 7.65%,
+          #ed146e 51.93%,
+          #ffc90c 95.29%
+        );
+        box-shadow: 0 5px 16px #ba4d654d;
+      }
+    }
+  }
+}

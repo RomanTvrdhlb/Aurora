@@ -1,0 +1,30 @@
+.h2o-footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-gap: clamp(10px, 1.0417vw, 15px);
+    position: relative;
+
+    &__item{
+        display: flex;   
+        color: rgba(var(--cl-d),0.6);
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 16px;
+    }
+
+    @include laptop{
+        justify-content: center;
+    }
+
+    &__icon{
+        transition: all .3s;
+       filter: grayscale(1) brightness(50%);
+
+       &:hover{
+        filter: none;
+       }
+    }
+
+}

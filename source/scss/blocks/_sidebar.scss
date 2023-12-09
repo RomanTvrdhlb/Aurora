@@ -1,0 +1,12 @@
+.sidebar{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 2.6316vw, 30px);
+
+    &__banners{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 1.7544vw, 20px);
+    }
+}
