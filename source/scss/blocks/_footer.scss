@@ -1,24 +1,123 @@
 footer{
-  padding: 17px 0 0;
-  // background-color: rgba(var(--bg-b),1.0);
-
+  background-color: rgba(var(--bg-q),1.0);
+  padding: clamp(30px, 4.386vw, 50px) 0 15px;
 }
 
 .footer{
   display: flex;
   flex-direction: column;
+  grid-gap: 15px;
   position: relative;
+
+  &__nav{
+    display: flex;
+    align-items: center;
+
+    &-item{
+      border-left: solid #636363 1px;
+
+      &:first-child{
+        border: none;
+      }
+    }
+
+    &-link{
+    padding: 0 10px;
+    white-space: nowrap;
+    color: rgba(var(--cl-m),1.0);
+    line-height: 120%;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: var(--font-family);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover{
+      text-decoration: none;
+    }
+    }
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+
+    p{
+      text-align: start !important;
+    }
+  }
+
+  &__age{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    line-height: 100%;
+    color: rgba(var(--cl-m),1.0);
+  }
 
   &__box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    grid-gap: clamp(20px, 3.1579vw, 36px);
+    padding-top: clamp(5px, 1.3158vw, 15px);
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+  }
+
+  &__top{
+    padding-bottom: clamp(20px, 2.6316vw, 30px);
+    border-bottom: 1px solid var(--br-m);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  &__title{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 39px;
+    line-height: 50px;
+    letter-spacing: .02em;
+    color: rgba(var(--cl-l),1.0);
+  }
+
+  &__faq{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  p{
+    color: rgba(var(--cl-l),1.0);
+    font-family: var(--font-family);
+    font-size: clamp(14px, 1.4035vw, 16px);
+    line-height: 100%;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__link{
+    font-family: var(--font-family);
+    font-size: clamp(14px, 1.4035vw, 16px);
+    line-height: 100%;
+    font-weight: 400;
+    color: rgba(var(--cl-m),1.0);
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 
   &__copyright{
     width: 100%;
     text-align: center;
-    padding: 15px;
     position: relative;
     color: rgba(var(--cl-l),1.0);
     font-family:var(--font-family);
