@@ -6,4 +6,8 @@
     &__item{
         display: flex;
     }
+
+    &--mode{
+        grid-gap: 30px;
+    }
 }

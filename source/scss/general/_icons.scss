@@ -196,6 +196,48 @@
     display: block;
   }
 
+  &-whatsapp{
+    background-image: url(../img/sprite/whatsapp.svg);
+    width: 15px;
+    height: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-viber{
+    background-image: url(../img/sprite/viber.svg);
+    width: 15px;
+    height: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-linkedin{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzIiIHdpZHRoPSI3MiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNOCA3Mmg1NmE4IDggMCAwIDAgOC04VjhhOCA4IDAgMCAwLTgtOEg4YTggOCAwIDAgMC04IDh2NTZhOCA4IDAgMCAwIDggOFoiIGZpbGw9IiMwMDdFQkIiLz48cGF0aCBkPSJNNjIgNjJINTEuMzE2VjQzLjgwMmMwLTQuOTktMS44OTYtNy43NzctNS44NDUtNy43NzctNC4yOTYgMC02LjU0IDIuOTAxLTYuNTQgNy43NzdWNjJIMjguNjMyVjI3LjMzM0gzOC45M3Y0LjY3czMuMDk2LTUuNzI5IDEwLjQ1My01LjcyOWM3LjM1MyAwIDEyLjYxNyA0LjQ5IDEyLjYxNyAxMy43NzdWNjJaTTE2LjM1IDIyLjc5NGMtMy41MDggMC02LjM1LTIuODY0LTYuMzUtNi4zOTdDMTAgMTIuODY0IDEyLjg0MiAxMCAxNi4zNSAxMGMzLjUwNyAwIDYuMzQ3IDIuODY0IDYuMzQ3IDYuMzk3IDAgMy41MzMtMi44NCA2LjM5Ny02LjM0OCA2LjM5N1pNMTEuMDMyIDYyaDEwLjczNlYyNy4zMzNIMTEuMDMzVjYyWiIgZmlsbD0iI0ZGRiIvPjwvZz48c2NyaXB0Lz48L3N2Zz4=");
+    background-size: contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin: 0 4px 0 0;
+  }
+
+  &-code{
+    background-image: url(../img/sprite/copy.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
   &-facebook{
     background-image: url(../img/sprite/fb.svg);
     width: 15px;

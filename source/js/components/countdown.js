@@ -1,30 +1,42 @@
-import vars from '../_vars';
-const {timers} = vars;
+// import vars from '../_vars';
+// const {timers} = vars;
 
-timers && timers.forEach(function(item){  
-  const itemDate = item.getAttribute('data-time');
-  const countDownDate = new Date(itemDate).getTime();
+// timers && timers.forEach(function(item){  
+//   const itemDate = item.getAttribute('data-time');
+//   const countDownDate = new Date(itemDate).getTime();
   
-  const x = setInterval(function() {
+//   const x = setInterval(function() {
     
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
+//     const now = new Date().getTime();
+//     const distance = countDownDate - now;
   
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     
-    if(!item.classList.contains('stop')){
-      item.querySelector('.h2o-timer__days').innerText = formatedValue(days,10);
-      item.querySelector('.h2o-timer__hours').innerText = formatedValue(hours,10);
-      item.querySelector('.h2o-timer__minutes').innerText = formatedValue(minutes, 10);
-      item.querySelector('.h2o-timer__seconds').innerText = formatedValue(seconds, 10);
-  }
-  }, 1000);
+//     if(!item.classList.contains('stop')){
+//       item.querySelector('.h2o-timer__days').innerText = formatedValue(days,10);
+//       item.querySelector('.h2o-timer__hours').innerText = formatedValue(hours,10);
+//       item.querySelector('.h2o-timer__minutes').innerText = formatedValue(minutes, 10);
+//       item.querySelector('.h2o-timer__seconds').innerText = formatedValue(seconds, 10);
+//   }
+//   }, 1000);
+// })
+
+// function formatedValue(value, countValue) {
+//   return value < countValue ? '0' + value : '' + value
+// }
+
+
+const bonusCards = document.querySelectorAll('.bonus-card');
+
+bonusCards.forEach(function(card){
+  const btn = card.querySelector('.bonus-card__button');
+
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    card.classList.toggle('active');
+  })
 })
-
-function formatedValue(value, countValue) {
-  return value < countValue ? '0' + value : '' + value
-}

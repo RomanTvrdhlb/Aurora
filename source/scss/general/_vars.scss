@@ -38,6 +38,8 @@
   --cl-k: #{HexToRGB(#9a9d9f)}; // rgba(var(--cl-k),1.0);
   --cl-l: #{HexToRGB(#636363)}; // rgba(var(--cl-l),1.0);
   --cl-m: #{HexToRGB(#818181)}; // rgba(var(--cl-m),1.0);
+  --cl-n: #{HexToRGB(#2e88e5)}; // rgba(var(--cl-n),1.0);
+  --cl-n: #{HexToRGB(#DCDCDC)}; // rgba(var(--cl-n),1.0);
 // --------------- default background color variable ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
   --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
@@ -57,6 +59,21 @@
   --bg-p: #{HexToRGB(#2f8f41)}; // rgba(var(--bg-p),1.0);
   --bg-q: #{HexToRGB(#0e0e0e)}; // rgba(var(--bg-q),1.0);
   --bg-r: #{HexToRGB(#818181)}; // rgba(var(--bg-r),1.0);
+  --bg-s: #{HexToRGB(#1e88e5)}; // rgba(var(--bg-s),1.0);
+  --bg-t: #{HexToRGB(#121212)}; // rgba(var(--bg-t),1.0);
+  --bg-u: #{HexToRGB(#81d742)}; // rgba(var(--bg-u),1.0);
+  --bg-v: #{HexToRGB(#2e88e5)}; // rgba(var(--bg-v),1.0);
+  --bg-w: #{HexToRGB(#2a283e)}; // rgba(var(--bg-w),1.0);
+  --bg-x: #{HexToRGB(#4caf50)}; // rgba(var(--bg-x),1.0);
+  --bg-y: #{HexToRGB(#eaeaea)}; // rgba(var(--bg-y),1.0);
+  --bg-z: #{HexToRGB(#343434)}; // rgba(var(--bg-z),1.0);
+
+// --------------- default background color variable ---------------
+  --bc-a: #{HexToRGB(#00aced)}; // rgba(var(--bc-a),1.0);
+  --bc-b: #{HexToRGB(#3b5998)}; // rgba(var(--bc-b),1.0);
+  --bc-c: #{HexToRGB(#45668e)}; // rgba(var(--bc-c),1.0);
+  --bc-d: #{HexToRGB(#29a628)}; // rgba(var(--bc-d),1.0);
+  --bc-e: #{HexToRGB(#7b519d)}; // rgba(var(--bc-e),1.0);
 // --------------- default border color color variable ---------------
   --br-a: #3B3D44; // var(--br-a);
   --br-b: rgba(255, 255, 255, 0.502); // var(--br-b);
@@ -71,6 +88,15 @@
   --br-k: #f83030; // var(--br-k);
   --br-l: #818181; // var(--br-l);
   --br-m: #636363; // var(--br-m);
+  --br-n: #FFC530; // var(--br-n);
+  --br-o: #e6e6e6; // var(--br-o);
+  --br-p: #FF8C2F; // var(--br-p);
+  --br-q: #2e88e5; // var(--br-q);
+  --br-r: #DFDFDF; // var(--br-r);
+  --br-s: #2088e3; // var(--br-s);
+  --br-t: #ddd; // var(--br-t);
+  --br-u: #e0e0e0; // var(--br-u);
+  --br-v: #3D3D3D; // var(--br-v);
 // -------------
 }
 

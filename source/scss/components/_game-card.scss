@@ -1,0 +1,208 @@
+.game-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 0 1px #e0e0e0;
+    grid-gap: 14px;
+    padding: 15px;
+    border-radius: 6px;
+    height: 100%;
+
+    &__label{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(var(--cl-a),1.0);
+        font-family: var(--font-family);
+        text-transform: uppercase;
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        padding: 4px 10px;
+        top: -5px;
+        left: -2px;
+
+    &::before{
+        content: '';
+        background: linear-gradient(180deg,#F72A2A 0,#F00 50%,#D60000 100%);
+        box-shadow: 0 4px 4px rgba(0,0,0,.35);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transform: skew(-15deg);
+        z-index: -1;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: -2px;
+        bottom: -4px;
+        border: 2px solid transparent;
+        border-top: 2px solid var(--br-d);
+        border-right: 2px solid var(--br-d);
+    }
+    }
+
+    &__image{
+        display: flex;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+        margin: -15px -15px 0;
+        width: calc(100% + 30px);
+        position: relative;
+        height: auto;
+     
+        img{
+            height: 100%;
+            max-height: 143px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__rating{
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
+        z-index: 2;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(var(--bg-w),1.0);
+        font-size: 16px;
+        font-family: var(--font-family);
+        line-height: 38px;
+        color:  rgba(var(--cl-a),1.0);
+        font-weight: bold;
+    }
+
+    &__title{
+        font-family:  var(--font-family);
+        color: rgba(var(--cl-d),1.0);
+        font-size: clamp(16px, 1.5789vw, 18px);
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    p{  flex-grow: 1;
+        font-family:  var(--font-family);
+        color: rgba(var(--cl-d),1.0);
+        font-size: clamp(15px, 1.4912vw, 17px);
+        line-height: 140%;
+    }
+
+    &__promo{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 3px;
+        align-items: center;
+        position: relative;
+        width: calc(100% + 38px);
+        margin-left: -19px;
+        padding: 5px;
+        border: 0;
+        font-size: 14px;
+        line-height: 15px;
+        text-transform: uppercase;
+        position: relative;
+        background: rgba(var(--bg-g),1.0);
+        margin-bottom: 10px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        border: 2px solid transparent;
+        border-top: 2px solid var(--br-p);
+        border-right: 2px solid var(--br-p);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -4px;
+        border: 2px solid transparent;
+        border-left: 2px solid var(--br-p);
+        border-top: 2px solid var(--br-p);
+    }
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 14px;
+        color: rgba(var(--cl-b),0.57);
+        font-family:  var(--font-family);
+        color: rgba(var(--cl-d),1.0);
+    }
+
+    &__subtitle{
+        font-size: 14px;
+        line-height: 15px;
+        color:  rgba(var(--cl-b),1);
+        font-family:  var(--font-family);
+        position: relative;
+        font-weight: bold;
+    }
+
+    &__value{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(16px, 1.7544vw, 20px);
+        line-height: 140%;
+        font-family:  var(--font-family);
+        color:  rgba(var(--cl-a),1);
+    }
+
+    .main-button{
+        &::after{
+            right: 5%;
+            display: flex;
+            width: 41px;
+            background-size: contain;
+            height: 40px;
+            bottom: -17px;
+        }
+    }
+}
+
+.top-card{
+    background:  rgba(var(--bg-z),1.0);
+    border: 1px solid var(--br-v);
+    box-shadow: 0 4px 15px #000;
+    padding: 10px;
+    .game-card{
+        &__image{
+            z-index: 1;
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+            overflow: visible;
+
+            img{
+                height: 129px;
+            }
+
+            &::before{
+                position: absolute;
+                content: '';
+                inset: -7px;
+          
+                background: #242424;
+                z-index: -1;
+            }
+        }
+
+    }
+}

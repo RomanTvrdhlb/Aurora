@@ -1,0 +1,21 @@
+.choice-nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+
+    &__link{
+        font-weight: bold;
+        font-size: clamp(14px, 1.3158vw, 15px);
+        line-height: 140%;
+        font-family: var(--font-family);
+        color: rgba(var(--cl-n),1.0);
+        border: 1px solid var(--br-u);
+        border-radius: 5px;
+        padding: 3px 7px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        white-space: nowrap;
+    }
+}

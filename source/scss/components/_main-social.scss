@@ -21,19 +21,75 @@
     }
 
     &__link{
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 36px;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all .3s;
+
+        &--twitter, &--tg{
+            background-color: rgba(var(--bc-a),1.0);
+            i{
+                width: 20px;
+                height: 20px;
+                filter: brightness(10);
+            }
+        }
+
+        &--facebook{
+            background-color: rgba(var(--bc-b),1.0);
+            i{
+                width: 20px;
+                height: 20px;
+                filter: brightness(10);
+            }
+        }
+
+        &--vk{
+            background-color: rgba(var(--bc-c),1.0);
+            i{
+                width: 20px;
+                height: 20px;
+                filter: brightness(10);
+            }
+        }
+
+        &--whatsapp{
+            background-color: rgba(var(--bc-d),0.8);
+            i{
+                width: 20px;
+                height: 20px;
+            } 
+        }
+
+        &--viber{
+            background-color: rgba(var(--bc-e),0.8);
+            i{
+                width: 20px;
+                height: 20px;
+                filter: brightness(10);
+            } 
+        }
+  
+        &:hover{
+           opacity: .8;
+        }
+    }
+}
+
+.footer-social{
+    .main-social__link{
+        width: 30px;
+        height: 30px;
+
         border-radius: 50%;
         border: 1px solid var(--br-l);
-        text-decoration: none;
-        transition: all .3s;
+
 
         &:hover{
             background: rgba(var(--bg-r),1.0);
-
+            opacity: 1;
             i{
                 filter: brightness(10);
             }
