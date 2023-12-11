@@ -43,7 +43,7 @@ const ico = require('gulp-to-ico');
 // paths
 const srcFolder = './source';
 const buildFolder = './build';
-const staticFolder = './build/static';
+const staticFolder = './build/template';
 
 const paths = {
   srcSvg: `${srcFolder}/img/sprite/*.svg`,
