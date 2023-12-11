@@ -4,23 +4,46 @@
   padding:15px 0 0;
  
   &__box{
-   display: grid;
-   align-items: center;
-   grid-gap:10px 15px;
-   grid-template-columns: auto 1fr auto;
-    justify-items: center;
+    display: grid;
+    align-items: center;
+    grid-gap:10px 15px;
+    grid-template-columns: auto 1fr auto;
+      justify-items: center;
+
+      @include tablet{
+        grid-template-columns: auto 1fr repeat(2, auto);
+      }
+
+      @include mobile{
+        grid-template-columns: auto 1fr auto;
+
+        .header-menu{
+          justify-self: end;
+        }
+
+        .header-info{
+          display: none;
+      }
+      }
   }
 
   .header-nav{
     grid-column: 1/-1;
-  }
 
-  .burger{
-    @include mobile{
-      margin-top: 10px;
+    @include tablet{
+      display: none;
     }
   }
 
+ 
+
+  .burger{
+   order: 4;
+  }
+
+  @include tablet{
+    padding: 15px 0;
+  }
 }
 
 

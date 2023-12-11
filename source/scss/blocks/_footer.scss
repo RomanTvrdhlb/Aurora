@@ -1,6 +1,6 @@
 footer{
   background-color: rgba(var(--bg-q),1.0);
-  padding: clamp(30px, 4.386vw, 50px) 0 15px;
+  padding: clamp(20px, 4.386vw, 50px) 0 15px;
 }
 
 .footer{
@@ -12,9 +12,12 @@ footer{
   &__nav{
     display: flex;
     align-items: center;
+    justify-content: center;
+    grid-gap: 10px 0;
+    flex-wrap: wrap;
 
     &-item{
-      border-left: solid #636363 1px;
+      border-left: solid 1px var(--br-m);
 
       &:first-child{
         border: none;
@@ -41,9 +44,17 @@ footer{
   &__info{
     display: flex;
     flex-direction: column;
-
+    grid-gap: 5px;
     p{
       text-align: start !important;
+    }
+
+    @include small-tablet{
+      grid-column: 1/-1;
+    }
+
+    @include mobile{
+      grid-column: initial;
     }
   }
 
@@ -67,22 +78,33 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap:5px 10px;
+    flex-wrap: wrap;
   }
 
   &__top{
     padding-bottom: clamp(20px, 2.6316vw, 30px);
+    grid-gap: 15px 10px;
     border-bottom: 1px solid var(--br-m);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+
+    @include small-tablet{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile{
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
   }
 
   &__title{
     font-family: var(--font-family);
     font-weight: 900;
-    font-size: 39px;
-    line-height: 50px;
+    font-size: clamp(32px, 3.4211vw, 39px);
+    line-height: 120%;
     letter-spacing: .02em;
     color: rgba(var(--cl-l),1.0);
   }
@@ -90,7 +112,7 @@ footer{
   &__faq{
     display: flex;
     flex-direction: column;
-    grid-gap: 16px;
+    grid-gap: clamp(10px, 1.4035vw, 16px);
   }
 
   p{

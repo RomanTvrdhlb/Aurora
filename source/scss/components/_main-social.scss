@@ -76,6 +76,10 @@
            opacity: .8;
         }
     }
+
+    @include mobile{
+        align-items: center;
+    }
 }
 
 .footer-social{
@@ -94,5 +98,9 @@
                 filter: brightness(10);
             }
         }
+    }
+
+    @include mobile{
+        align-items: flex-start;
     }
 }

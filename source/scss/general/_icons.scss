@@ -24,8 +24,8 @@
 
   &-info{
     background-image: url(../img/index/avrora.png);
-    width: 124px;
-    height: 28px;
+    width: clamp(70px, 10.8772vw, 124px);
+    height: clamp(20px, 2.4561vw, 28px);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,6 +230,16 @@
 
   &-code{
     background-image: url(../img/sprite/copy.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-copy{
+    background-image: url(../img/sprite/copy2.svg);
     width: 16px;
     height: 16px;
     background-position: center center;

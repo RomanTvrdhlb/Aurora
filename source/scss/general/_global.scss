@@ -161,6 +161,10 @@ input[type="number"] {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 1fr 300px;
+
+  @include tablet{
+    grid-template-columns: 1fr;
+  }
 }
 
 .panel,

@@ -9,7 +9,7 @@
         font-size: clamp(14px, 1.3158vw, 15px);
         line-height: 140%;
         font-family: var(--font-family);
-        color: rgba(var(--cl-n),1.0);
+        color: rgba(var(--cl-o),1.0);
         border: 1px solid var(--br-u);
         border-radius: 5px;
         padding: 3px 7px;
@@ -17,5 +17,19 @@
         align-items: center;
         position: relative;
         white-space: nowrap;
+        transition: all .4s;
+
+        &:hover{
+            background-color: rgba(var(--bc-f),1.0);
+            color: rgba(var(--cl-d),1.0);
+        }
+    }
+
+    @include small-tablet{
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: calc(100% + (var(--container-offset) * 2));
+        margin-left: calc(var(--container-offset) * -1);
+        padding:0 var(--container-offset);
     }
 }

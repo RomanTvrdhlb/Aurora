@@ -1,6 +1,10 @@
 .first-section{
     position: relative;
-    padding-bottom: clamp(20px, 2.6316vw, 30px);
+    padding-bottom: 30px;
+
+    @include tablet{
+        padding-bottom: 40px;
+    }
     
     &__box{
         display: flex;

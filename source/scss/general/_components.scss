@@ -1,57 +1,35 @@
 // ----------------- MAIN COMPONENTS -----------------
 @import "components/header-info.scss";
 @import "components/header-menu.scss";
-@import "components/header-nav";
 @import "components/header-bonus";
 @import "components/main-brands";
-@import "components/brand-card";
-@import "components/casino-card";
 @import "components/main-prop";
 @import "components/main-top.scss";
-@import "components/casinos-list.scss";
-@import "components/page-nav.scss";
 @import "components/main-download.scss";
 @import "components/main-social.scss";
-@import "components/bonus-card.scss";
-@import "components/main-form.scss";
-@import "components/game-list.scss";
-@import "components/game-card.scss";
-@import "components/author-card.scss";
-@import "components/choice-nav.scss";
-@import "components/cards-list.scss";
+@import "components/top-game.scss";
 
-
-
-
-
-
-
-@import "components/h2o-main-box.scss";
-@import "components/h2o-accordion.scss";
-@import "components/h2o-counter.scss";
 // ----------------- MAIN COMPONENTS -----------------
 
 // ----------------- BLOCK COMPONENTS -----------------
-@import "components/h2o-jackpot-card";
-@import "components/h2o-tutorial-card";
-@import "components/h2o-players-block";
-@import "components/h2o-game-card.scss";
-
-
-
-@import "components/h2o-play-card";
-@import "components/h2o-main-slider.scss";
+@import "components/game-card.scss";
+@import "components/author-card.scss";
+@import "components/brand-card";
+@import "components/casino-card";
+@import "components/bonus-card.scss";
+@import "components/main-form.scss";
 
 // ----------------- BLOCK COMPONENTS -----------------
 
 // ----------------- GRID COMPONENTS -----------------
-@import "components/h2o-tutorial-list.scss";
-@import "components/h2o-games-list.scss";
-@import "components/h2o-partners-list.scss";
-
-@import "components/h2o-social-list.scss";
-
-@import "components/h2o-footer-info.scss";
+@import "components/cards-list.scss";
+@import "components/game-list.scss";
+@import "components/casinos-list.scss";
+@import "components/page-nav.scss";
+@import "components/choice-nav.scss";
+@import "components/header-nav";
 // ----------------- GRID COMPONENTS -----------------
 
 
+@import "components/h2o-accordion.scss";
+@import "components/h2o-footer-info.scss";

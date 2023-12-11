@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:15px 0;
+    padding:10px 0;
     grid-gap: clamp(16px, 1.7266vw, 24px);
     position: relative;
     z-index: 1;
@@ -15,7 +15,7 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #374956;
+        background-color: rgba(var(--bg-f),1.0);
         z-index: -1;
     }
 
@@ -25,7 +25,7 @@
         text-align: center;
         font-family: var(--font-family);
         color: rgba(var(--cl-a),1.0);
-        font-size: clamp(14px, 1.4035vw, 16px);
+        font-size: 14px;
         line-height: 120%;
         font-weight: bold;
         text-transform: uppercase;

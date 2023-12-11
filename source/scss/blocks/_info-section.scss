@@ -1,12 +1,32 @@
 .info-section{
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: rgba(var(--cl-d),1.0);
+    line-height: normal;
+   
 
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(20px, 2.6316vw, 30px);
+    }   
 
-
-
-    p{
-        font-size: 16px;
-        font-family: var(--font-family);
-        color: rgba(var(--cl-d),1.0);
-        line-height: normal;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 16px;
     }
+
+    .title{
+        padding: 5px 0;
+    }
+
+    .game-list{
+        margin-top: 10px;
+    }
+
+    .main-image{
+        align-self: center;
+    }
+
 }

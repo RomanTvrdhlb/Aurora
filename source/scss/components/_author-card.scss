@@ -46,6 +46,15 @@
         line-height: 18px;
         border-left: solid 1px var(--br-r);
         padding-left: clamp(15px, 3.5088vw, 40px);
+
+        @include mobile{
+            padding: 18px 0 0;
+            border-left: none;
+            border-top: solid 1px var(--br-r);
+        }
     }
 
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
 }

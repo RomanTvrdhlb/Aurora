@@ -171,6 +171,33 @@
     }
 }
 
+.game-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(92.2deg,rgba(48,183,73,.8) 1.85%,rgba(53,146,65,.8) 98.15%);
+    border: 1px solid var(--br-w);
+    border-radius: 3px;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 25%), 0px 9px 27px rgb(0 0 0 / 47%);
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    font-family:  var(--font-family);
+    text-align: center;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: rgba(var(--cl-a),1.0);
+    width: 126px;
+    padding: 8px;
+    white-space: nowrap;
+
+    &:hover {
+      background: linear-gradient(92.2deg,#30B749 1.85%,#359241 98.15%);
+      border: 1px solid var(--br-x);
+      box-shadow: 0 3px 9px rgb(0 0 0 / 25%), 0px 9px 27px rgb(0 0 0 / 47%);
+  }
+}
+
 .black-button{
     width: 100%;
     max-width: 200px;

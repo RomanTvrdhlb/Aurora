@@ -9,9 +9,13 @@
     line-height: 120%;
     color: rgba(var(--cl-d), 1);
     font-family: var(--font-family);
+
+    @include small-tablet{
+      text-align: center;
+    }
   }
   h1{
-    font-size: clamp(26px, 2.9825vw, 34px);
+    font-size: clamp(24px, 2.9825vw, 34px);
   }
 
   p{
@@ -19,5 +23,9 @@
     color: rgba(var(--cl-d), 1);
     font-size: clamp(14px, 1.4035vw, 16px);
     line-height: 130%;
+
+    @include small-tablet{
+      text-align: center;
+    }
   }
 }
