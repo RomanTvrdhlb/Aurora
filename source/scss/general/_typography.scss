@@ -66,16 +66,16 @@
 
 blockquote{
     margin: 0;
-    color: #fafafa;
-    padding: 30px 30px 30px 60px;
-    border-left: 8px solid #ffc530;
+    color: rgba(var(--cl-q),1.0);
+    padding: clamp(20px, 2.6316vw, 30px) clamp(20px, 2.6316vw, 30px) clamp(20px, 2.6316vw, 30px) clamp(40px, 5.2632vw, 60px);
+    border-left: 8px solid var(--br-n);
     position: relative;
-    background: #fafafa;
+    background: rgba(var(--bg-n),1.0);
     font-weight: 300;
 
     &::before{
       content: "\201C";
-      color: #ffc530;
+      color: rgba(var(--cl-f),1.0);
       font-size: 70px;
       position: absolute;
       left: 15px;

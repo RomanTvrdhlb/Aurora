@@ -40,3 +40,15 @@ bonusCards.forEach(function(card){
     card.classList.toggle('active');
   })
 })
+
+const bonusMenuBtn = document.querySelector('.header-menu__btn');
+
+bonusMenuBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  bonusMenuBtn.parentNode.classList.toggle('active');
+})
+
+document.addEventListener('click', function(event) {
+  const e = bonusMenuBtn.parentNode;
+  if (!e.contains(event.target)) bonusMenuBtn.parentNode.classList.remove('active');
+});

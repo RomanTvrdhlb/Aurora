@@ -1,4 +1,15 @@
 .header-menu {
+  position: relative;
+
+  @include mobile{
+   position: static;
+  }
+  &.active{
+    .header-menu__box{
+      display: flex;
+    }
+  }
+
   &__title {
     font-size: clamp(16px, 1.5789vw, 18px);
     line-height: 1;
@@ -8,7 +19,10 @@
   }
 
   &__box {
-    display: flex;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    transform: translate(0,100%);
     flex-direction: column;
     grid-gap: clamp(15px, 1.7544vw, 20px);
     display: none;
@@ -17,6 +31,13 @@
     background-color: rgba(var(--bg-e), 1);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.55);
     z-index: 100;
+    border-radius: 8px;
+
+    @include mobile{
+      bottom: -5px;
+      right: 50%;
+      transform: translate(50%, 100%);
+    }
   }
 
   &__wrapp {
@@ -49,9 +70,8 @@
     font-size: clamp(14px, 1.4035vw, 16px);
     line-height: 120%;
     font-weight: bold;
-    text-decoration: none;
     color: rgba(var(--cl-c), 1);
-
+    align-self: center;
     &:hover {
       text-decoration: underline;
     }
