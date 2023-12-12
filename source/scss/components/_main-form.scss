@@ -1,7 +1,7 @@
 .main-form{
-    background-color: #fafafa;
+    background-color: rgba(var(--bg-n),1.0);
     padding: 15px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--br-c);
     display: flex;
     flex-direction: column;
     grid-gap: clamp(15px, 1.7544vw, 20px);
