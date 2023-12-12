@@ -49,6 +49,8 @@
   --cl-v: #{HexToRGB(#00A61F)}; // rgba(var(--cl-v),1.0);
   --cl-w: #{HexToRGB(#68F26E)}; // rgba(var(--cl-w),1.0);
   --cl-x: #{HexToRGB(#777)}; // rgba(var(--cl-x),1.0);
+  --cl-y: #{HexToRGB(#999)}; // rgba(var(--cl-y),1.0);
+  --cl-z: #{HexToRGB(#4caf50)}; // rgba(var(--cl-z),1.0);
 // --------------- default background color variable ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
   --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
@@ -87,6 +89,8 @@
   --bc-g: #{HexToRGB(#3d5867)}; // rgba(var(--bc-g),1.0);
   --bc-h: #{HexToRGB(#FFD14F)}; // rgba(var(--bc-h),1.0);
   --bc-i: #{HexToRGB(#00A61F)}; // rgba(var(--bc-i),1.0);
+  --bc-j: #{HexToRGB(#afb42b)}; // rgba(var(--bc-j),1.0);
+  --bc-k: #{HexToRGB(#f3f3f3)}; // rgba(var(--bc-k),1.0);
 
 
 

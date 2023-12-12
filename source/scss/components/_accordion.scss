@@ -6,29 +6,32 @@
     &__button{
         width: 100%;
         padding: 10px 15px;
-        background: #fafafa;
-        border: solid 1px #e0e0e0;
+        background: rgba(var(--bg-n),1.0);
+        border: solid 1px var(--br-c);
         display: flex;
+        grid-gap: 5px;
         justify-content: space-between;
         align-items: center;
+        transition: all .3s;
   
 
         &.active{
+            background: rgba(var(--bg-r),0.2);
             .accordion__icon{
                 rotate: 135deg;
             }
         }
 
         &:hover{
-            // background: linear-gradient(107deg, rgb(64, 0, 209) 0%, rgb(0, 137, 135) 80%);
+            background: rgba(var(--bg-r),0.2);
         }
     }
 
     &__icon{
         width: 10px;
         height: 10px;
-        border-bottom: 2px solid #1d262d;
-        border-left: 2px solid #1d262d;
+        border-bottom: 2px solid var(--br-i);
+        border-left: 2px solid var(--br-i);
         transition: all ease .3s;
        
         rotate: -45deg;
@@ -44,8 +47,9 @@
         flex-direction: column;
         grid-gap: 15px;
         padding: 15px;
-        border: solid 1px #e0e0e0;
+        border: solid 1px var(--br-c);
         border-top: none;
+        margin-bottom: 1px;
     }
 
     &__title{
@@ -53,6 +57,7 @@
         font-family: var(--font-family);
         font-size: 16px;
         font-weight: 400;
+        text-align: start;
     }
 
     p{

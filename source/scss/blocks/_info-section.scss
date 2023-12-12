@@ -17,6 +17,11 @@
         grid-gap: 16px;
     }
 
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+    }
+
     .title{
         padding: 5px 0;
     }
@@ -29,4 +34,11 @@
         align-self: center;
     }
 
+    .main-social{
+        align-self: center;
+    }
+
+    &--mode{
+        padding-bottom: 20px;
+    }
 }

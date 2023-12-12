@@ -169,6 +169,25 @@
         background-color: rgba(var(--bg-j),1.0);
       }
     }
+
+    &--transparent{
+      color: rgba(var(--cl-d),1.0);
+      border: solid 2px var(--br-q);
+      background-color:  rgba(var(--bg-a),1.0);
+      box-shadow: none;
+      text-decoration: none;
+
+      &::after{
+        display: none;
+      }
+      &::before{
+        display: none;
+      }
+      &:hover{
+        color: rgba(var(--cl-a),1.0);
+        background-color: rgba(var(--bg-v),1.0);
+      }
+    }
 }
 
 .bonus-button{
@@ -269,4 +288,41 @@
     }
    
 
+}
+
+.lift{
+  left: 10px;
+  background-color: rgba(var(--bg-o),1.0);
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  z-index: 50;
+  position: fixed;
+  bottom: 10px;
+  transform: translateX(-250%);
+  color: rgba(var(--cl-a),1.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%) rotate(135deg);
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid rgba(var(--cl-a),1.0);
+    border-left: 2px solid rgba(var(--cl-a),1.0);
+  }
+
+  &.show{
+    transform: translateX(0);
+
+    &:hover{
+      transform: translateX(0) scale(1.05);
+    }
+  }
 }

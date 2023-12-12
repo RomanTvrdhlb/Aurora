@@ -537,8 +537,8 @@
           </div>
         </aside>
         <div class="main-inner__content">
-          <section class="first-section">
-            <div class="first-section__box">
+          <section class="info-section info-section--mode">
+            <div class="info-section__box">
               <div class="forum-block">
                 <div class="forum-block__bg">
                   <img width="735" height="130" src="template/img/index/forum.png" alt="image">
@@ -552,6 +552,9 @@
 
                 <div class="forum-block__icon">
                   <img width="220" height="110" src="template/img/index/coins.png" alt="image">
+                </div>
+                <div class="forum-block__icon forum-block__icon--mob">
+                  <img width="768" height="103" src="template/img/index/coins-mob.png" alt="image">
                 </div>
                 <button class="main-button main-button--green">Задать вопрос</button>
               </div>
@@ -600,6 +603,7 @@
                 </li>
               </ul>
 
+              <div class="info-section__wrapp">
               <div class="subtitle-black">
                 <span>бонусы казино</span>
               </div>
@@ -625,8 +629,8 @@
                       </div>
                     </div>
                     <div class="bonus-card__right">
-                      <button class="main-button">CASINORU<i class="icon-code"></i></button>
-                      <button class="main-button main-button--red">Играть</button>
+                      <button class="main-button main-button--orange">CASINORU<i class="icon-code"></i></button>
+                      <button class="main-button main-button--red">Получить</button>
                     </div>
                   </div>
                 </li>
@@ -651,12 +655,12 @@
                       </div>
                       <div class="bonus-card__coll">
                         <span class="bonus-card__text">Слот:</span>
-                        <span class="bonus-card__link">Fruit Party</span>
+                        <a href="#" class="bonus-card__link">Fruit Party</a>
                       </div>
                     </div>
                     <div class="bonus-card__right">
-                      <button class="main-button">CASINORU<i class="icon-code"></i></button>
-                      <button class="main-button main-button--red">Играть</button>
+                      <button class="main-button main-button--orange">CASINORU<i class="icon-code"></i></button>
+                      <button class="main-button main-button--red">Получить</button>
                     </div>
                   </div>
                 </li>
@@ -681,8 +685,8 @@
                       </div>
                     </div>
                     <div class="bonus-card__right">
-                      <button class="main-button">CASINORU<i class="icon-code"></i></button>
-                      <button class="main-button main-button--red">Играть</button>
+                      <button class="main-button main-button--orange">CASINORU<i class="icon-code"></i></button>
+                      <button class="main-button main-button--red">Получить</button>
                     </div>
                   </div>
                 </li>
@@ -707,12 +711,12 @@
                       </div>
                       <div class="bonus-card__coll">
                         <span class="bonus-card__text">Слот:</span>
-                        <span class="bonus-card__link">Fruit Party</span>
+                        <a href="#" class="bonus-card__link">Fruit Party</a>
                       </div>
                     </div>
                     <div class="bonus-card__right">
-                      <button class="main-button">CASINORU<i class="icon-code"></i></button>
-                      <button class="main-button main-button--red">Играть</button>
+                      <button class="main-button main-button--orange">CASINORU<i class="icon-code"></i></button>
+                      <button class="main-button main-button--red">Получить</button>
                     </div>
                   </div>
                 </li>
@@ -737,12 +741,13 @@
                       </div>
                     </div>
                     <div class="bonus-card__right">
-                      <button class="main-button">CASINORU<i class="icon-code"></i></button>
-                      <button class="main-button main-button--red">Играть</button>
+                      <button class="main-button main-button--orange">CASINORU<i class="icon-code"></i></button>
+                      <button class="main-button main-button--red">Получить</button>
                     </div>
                   </div>
                 </li>
               </ul>
+            </div>
 
 
               <div class="main-top">
@@ -924,7 +929,6 @@
                 <p>Казино Покердом стало дополнением одноименного русскоязычного покер-рума со сквозной регистрацией, которая распространяется и на раздел со ставками на спорт. Оператор постоянно пополняет коллекцию азартных игр и расширяет список представленных провайдеров. Однако основное внимание администрация уделяет развитию покер-рума.</p>
               </div>
 
-            
               <div class="main-box">
                 <span class="title">Часто задаваемые вопросы</span>
                 <ul class='accordion' data-single='true' data-breakpoint='576' data-accordion-init>
@@ -1020,8 +1024,6 @@
                 </ul>
               </div>
 
-          
-
               <div class="characteritic">
                 <div class="characteritic__coll">
                   <span class="characteritic__title">Преимущества</span>
@@ -1076,81 +1078,139 @@
                   </li>
                 </ul>
               </div>
-
-              
+            
               <div class="main-box">
                 <span class="title">Популярные отзывы</span>
-                <div class="game-card">
-                  <a href="#" class="game-card__image">
-                    <img width="230" height="133" src="template/img/index/game1.jpg" alt="image">
-                    <span class="game-card__rating">4.9</span>
-                  </a>
-                  <span class="game-card__title">Golden Dragon Inferno</span>
-                  <span class="game-card__subtitle">Betsoft</span>
-                  <p>625 бесплатных вращений и бонус 100% от
-                  <b>Cosmolot</b></p>
-                  <div class="game-card__promo">
-                    <span class="game-card__text">по промокоду</span>
-                    <span class="game-card__subtitle">CASINORU</span>
+                <div class="main-slider splide">
+                  <div class="main-slider__wrapp splide__track">
+                    <ul class="main-slider__list splide__list">
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game1.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game2.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game3.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game1.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game2.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                      <li class="main-slider__slide splide__slide">
+                        <div class="game-card">
+                          <a href="#" class="game-card__image">
+                            <img width="230" height="133" src="template/img/index/game3.jpg" alt="image">
+                            <span class="game-card__rating">4.9</span>
+                          </a>
+                          <span class="game-card__title">Golden Dragon Inferno</span>
+                          <span class="game-card__subtitle">Betsoft</span>
+                          <p>625 бесплатных вращений и бонус 100% от
+                          <b>Cosmolot</b></p>
+                          <div class="game-card__promo">
+                            <span class="game-card__text">по промокоду</span>
+                            <span class="game-card__subtitle">CASINORU</span>
+                          </div>
+                          <button class="main-button main-button--green">Демо бесплатно</button>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <button class="main-button main-button--green">Демо бесплатно</button>
-                </div>
-                <div class="game-card">
-                  <a href="#" class="game-card__image">
-                    <img width="230" height="133" src="template/img/index/game1.jpg" alt="image">
-                    <span class="game-card__rating">4.9</span>
-                  </a>
-                  <span class="game-card__title">Golden Dragon Inferno</span>
-                  <span class="game-card__subtitle">Betsoft</span>
-                  <p>625 бесплатных вращений и бонус 100% от
-                  <b>Cosmolot</b></p>
-                  <div class="game-card__promo">
-                    <span class="game-card__text">по промокоду</span>
-                    <span class="game-card__subtitle">CASINORU</span>
-                  </div>
-                  <button class="main-button main-button--green">Демо бесплатно</button>
-                </div>
-                <div class="game-card">
-                  <a href="#" class="game-card__image">
-                    <img width="230" height="133" src="template/img/index/game1.jpg" alt="image">
-                    <span class="game-card__rating">4.9</span>
-                  </a>
-                  <span class="game-card__title">Golden Dragon Inferno</span>
-                  <span class="game-card__subtitle">Betsoft</span>
-                  <p>625 бесплатных вращений и бонус 100% от
-                  <b>Cosmolot</b></p>
-                  <div class="game-card__promo">
-                    <span class="game-card__text">по промокоду</span>
-                    <span class="game-card__subtitle">CASINORU</span>
-                  </div>
-                  <button class="main-button main-button--green">Демо бесплатно</button>
                 </div>
               </div>
-             
-
-             
-
-
+  
               <div class="main-reviews">
-                <span class="title"></span>
+                <span class="title">Последние отзывы о казино Покердом</span>
                 <ul class="main-reviews__list">
                   <li class="main-reviews__item">
                     <div class="main-review">
-                      <div class="main-reviews__top">
-                        <div class="main-reviews__image">
+                      <div class="main-review__top">
+                        <div class="main-review__image">
                           <img width="50" height="50" src="template/img/sprite/user.svg" alt="image">
                         </div>
-                        <div class="main-reviews__inner">
-                          <div class="main-reviews__user">
-                            <span class="main-reviews__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
-                            <span class="main-reviews__rang">Новичок</span>
+                        <div class="main-review__inner">
+                          <div class="main-review__user">
+                            <span class="main-review__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
+                            <span class="main-review__rang">Новичок</span>
                           </div>
-                          <span class="main-reviews__date"><i class="icon-clock"></i>16 ноября 2023</span>
+                          <span class="main-review__date"><i class="icon-clock"></i>16 ноября 2023</span>
                         </div>
                       </div>
                       <p>Честно говоря, думал что в Покердоме больше игр. Но как начал рассматривать, что есть в игротеке, оказалось слотов не так и много. В тежподдержке сказали, что около 2000. И тогда я понял, почему мне показалось, что выбор скромный. Возможно, они пытаются это компенсировать наличием ставок и покера. Но лично мне хотелось бы больше слотов. Зато провайдеров хоть отбавляй.</p>
-                      <div class="main-reviews__bottom">
-                        <span class="main-reviews__text">Общая оценка</span>
+                      <div class="main-review__bottom">
+                        <span class="main-review__text">Общая оценка</span>
                         <div class="rating">
                           <ul class="rating__list">
                             <li class="rating__item">
@@ -1176,21 +1236,21 @@
                   </li>
                   <li class="main-reviews__item">
                     <div class="main-review">
-                      <div class="main-reviews__top">
-                        <div class="main-reviews__image">
+                      <div class="main-review__top">
+                        <div class="main-review__image">
                           <img width="50" height="50" src="template/img/sprite/user.svg" alt="image">
                         </div>
-                        <div class="main-reviews__inner">
-                          <div class="main-reviews__user">
-                            <span class="main-reviews__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
-                            <span class="main-reviews__rang">Новичок</span>
+                        <div class="main-review__inner">
+                          <div class="main-review__user">
+                            <span class="main-review__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
+                            <span class="main-review__rang">Новичок</span>
                           </div>
-                          <span class="main-reviews__date"><i class="icon-clock"></i>16 ноября 2023</span>
+                          <span class="main-review__date"><i class="icon-clock"></i>16 ноября 2023</span>
                         </div>
                       </div>
                       <p>Честно говоря, думал что в Покердоме больше игр. Но как начал рассматривать, что есть в игротеке, оказалось слотов не так и много. В тежподдержке сказали, что около 2000. И тогда я понял, почему мне показалось, что выбор скромный. Возможно, они пытаются это компенсировать наличием ставок и покера. Но лично мне хотелось бы больше слотов. Зато провайдеров хоть отбавляй.</p>
-                      <div class="main-reviews__bottom">
-                        <span class="main-reviews__text">Общая оценка</span>
+                      <div class="main-review__bottom">
+                        <span class="main-review__text">Общая оценка</span>
                         <div class="rating">
                           <ul class="rating__list">
                             <li class="rating__item">
@@ -1216,21 +1276,21 @@
                   </li>
                   <li class="main-reviews__item">
                     <div class="main-review">
-                      <div class="main-reviews__top">
-                        <div class="main-reviews__image">
+                      <div class="main-review__top">
+                        <div class="main-review__image">
                           <img width="50" height="50" src="template/img/sprite/user.svg" alt="image">
                         </div>
-                        <div class="main-reviews__inner">
-                          <div class="main-reviews__user">
-                            <span class="main-reviews__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
-                            <span class="main-reviews__rang">Новичок</span>
+                        <div class="main-review__inner">
+                          <div class="main-review__user">
+                            <span class="main-review__title"><i class="icon-user"></i>ANDSWARE_Edison</span>
+                            <span class="main-review__rang">Новичок</span>
                           </div>
-                          <span class="main-reviews__date"><i class="icon-clock"></i>16 ноября 2023</span>
+                          <span class="main-review__date"><i class="icon-clock"></i>16 ноября 2023</span>
                         </div>
                       </div>
                       <p>Честно говоря, думал что в Покердоме больше игр. Но как начал рассматривать, что есть в игротеке, оказалось слотов не так и много. В тежподдержке сказали, что около 2000. И тогда я понял, почему мне показалось, что выбор скромный. Возможно, они пытаются это компенсировать наличием ставок и покера. Но лично мне хотелось бы больше слотов. Зато провайдеров хоть отбавляй.</p>
-                      <div class="main-reviews__bottom">
-                        <span class="main-reviews__text">Общая оценка</span>
+                      <div class="main-review__bottom">
+                        <span class="main-review__text">Общая оценка</span>
                         <div class="rating">
                           <ul class="rating__list">
                             <li class="rating__item">
@@ -1254,6 +1314,7 @@
                       </div>
                     </div>
                   </li>
+              
                 </ul>
 
                 <div class="main-reviews__btns">
@@ -1261,7 +1322,6 @@
                   <button class="main-button main-button--transparent">Смотреть все отзывы</button>
                 </div>
               </div>
-
 
               <div class="main-box">
                 <span class="title">Похожие казино</span>
@@ -1295,12 +1355,6 @@
                   </div>
                 </div>
               </div>
-            
-
-
-
-              
-
         </div>
       </div>
 
@@ -1322,10 +1376,11 @@
 
 
   </main>
-
+  <button class="lift"  id="upbutton"></button>
   @include('partials/footer.html')
   @include('partials/overlay.html')
-
+<!-- 
+  <script src="template/js/splide.js"></script> -->
   <script src="template/js/main.js"></script>
 </body>
 
