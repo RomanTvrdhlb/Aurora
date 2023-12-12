@@ -8,6 +8,10 @@
 @import "components/main-download.scss";
 @import "components/main-social.scss";
 @import "components/top-game.scss";
+@import "components/main-casino.scss";
+@import "components/main-bonus.scss";
+@import "components/main-vote.scss";
+@import "components/main-table.scss";
 
 // ----------------- MAIN COMPONENTS -----------------
 
@@ -18,7 +22,7 @@
 @import "components/casino-card";
 @import "components/bonus-card.scss";
 @import "components/main-form.scss";
-
+@import "components/accordion.scss";
 // ----------------- BLOCK COMPONENTS -----------------
 
 // ----------------- GRID COMPONENTS -----------------
@@ -31,5 +35,5 @@
 // ----------------- GRID COMPONENTS -----------------
 
 
-@import "components/h2o-accordion.scss";
+
 @import "components/h2o-footer-info.scss";

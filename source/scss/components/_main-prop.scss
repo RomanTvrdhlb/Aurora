@@ -1,51 +1,78 @@
-.main-prop{
+.main-prop {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+
+  &__list {
     display: flex;
-    flex-direction: column;
     grid-gap: 5px;
+    align-items: center;
+  }
 
-    &__list{
-        display: flex;
-        grid-gap: 5px;
-        align-items: center;
+  &__title {
+    font-size: 14px;
+    line-height: 100%;
+    font-family: var(--font-family);
+    color: rgba(var(--cl-i), 1);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    padding: 3px;
+    font-size: 10px;
+    color: rgba(var(--cl-i), 1);
+    border: 1px solid var(--br-g);
+    border-radius: 3px;
+    background-color: rgba(var(--bg-a), 1);
+    transition: all 0.3s;
+
+    i {
+      width: 100%;
+      height: 100%;
     }
 
-    &__title{
-        font-size: 14px;
-        line-height: 100%;
-        font-family: var(--font-family);
-        color: rgba(var(--cl-i),1.0);
+    &:hover {
+      background-color: rgba(var(--bg-b), 0.08);
+    }
+  }
 
-        @include mobile{
-            text-align: center;
+  @include mobile {
+    width: fit-content;
+  }
+
+  &--mode {
+    grid-gap: 10px;
+    .main-prop {
+      &__title {
+        font-size: 16px;
+        color: rgba(var(--cl-a), .7);
+        text-align: center;
+      }
+
+      &__link {
+        font-weight: 700;
+        font-size: 12px;
+        background-color: rgba(var(--bg-a), 0.9);
+        width: 32px;
+      }
+      &__item {
+        &:last-child {
+          .main-prop__link {
+            color: rgba(var(--cl-a), 1);
+            background-color: transparent;
+            border-color: transparent;
+          }
         }
+      }
     }
-
-    &__link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        width: 28px;
-        height: 28px;
-        padding: 3px;
-        font-size: 10px;
-        color: rgba(var(--cl-i),1.0);
-        border: 1px solid var(--br-g);
-        border-radius: 3px;
-        background-color: rgba(var(--bg-a),1.0);
-        transition: all .3s;
-
-        i{
-            width: 100%;
-            height: 100%;
-        }
-
-        &:hover{
-            background-color: rgba(var(--bg-b),0.08);
-        }
-    }
-
-    @include mobile{
-        width: fit-content;
-    }
+  }
 }

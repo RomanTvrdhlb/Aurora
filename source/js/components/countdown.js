@@ -32,23 +32,24 @@
 
 const bonusCards = document.querySelectorAll('.bonus-card');
 
-bonusCards.forEach(function(card){
+bonusCards && bonusCards.forEach(function(card){
   const btn = card.querySelector('.bonus-card__button');
-
-  btn.addEventListener('click', function(e){
-    e.preventDefault();
-    card.classList.toggle('active');
-  })
+  if(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      card.classList.toggle('active');
+    })
+  }
 })
 
 const bonusMenuBtn = document.querySelector('.header-menu__btn');
 
-bonusMenuBtn.addEventListener('click', function(e){
+bonusMenuBtn && bonusMenuBtn.addEventListener('click', function(e){
   e.preventDefault();
   bonusMenuBtn.parentNode.classList.toggle('active');
 })
 
-document.addEventListener('click', function(event) {
+bonusMenuBtn && document.addEventListener('click', function(event) {
   const e = bonusMenuBtn.parentNode;
   if (!e.contains(event.target)) bonusMenuBtn.parentNode.classList.remove('active');
 });
