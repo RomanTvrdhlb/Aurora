@@ -261,7 +261,6 @@ if (overlay) {
 }
 
 //----slider------------------------------------
-import Splide from "./splide";
 
 mainSlider &&
   new Splide(mainSlider, {
