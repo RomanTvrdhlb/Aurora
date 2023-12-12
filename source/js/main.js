@@ -9,6 +9,7 @@ const htmlEl = document.documentElement;
 const bodyEl = document.body;
 const bonusCards = document.querySelectorAll(".bonus-card");
 const bonusMenuBtn = document.querySelector(".header-menu__btn");
+const tooltipBlocks = document.querySelectorAll('.main-prop');
 //------------------------------------------------
 
 //----customFunction------------------------------
@@ -95,6 +96,25 @@ bonusMenuBtn &&
     if (!e.contains(event.target))
       bonusMenuBtn.parentNode.classList.remove("active");
   });
+
+//----tooltipHandler-----------------------------
+tooltipBlocks && tooltipBlocks.forEach(function(block){
+  const btn = block.querySelector('.tooltip-btn');
+  
+  btn && btn.addEventListener('click', function(e){
+    e.preventDefault();
+      removeClassInArray(tooltipBlocks, 'active');
+      toggleCustomClass(block, 'active');
+
+ document.addEventListener("click", function (event) {
+    const e = block;
+
+    if (!e.contains(event.target))
+       removeCustomClass(block, 'active');
+  });
+  })
+})  
+ 
 
 //----lift---------------------------------------
 if (document.getElementById("upbutton")) {

@@ -51,6 +51,9 @@
   --cl-x: #{HexToRGB(#777)}; // rgba(var(--cl-x),1.0);
   --cl-y: #{HexToRGB(#999)}; // rgba(var(--cl-y),1.0);
   --cl-z: #{HexToRGB(#4caf50)}; // rgba(var(--cl-z),1.0);
+
+  // --------------- default second text color variable ---------------
+  --scl-a: #{HexToRGB(#1D262D)}; // rgba(var(--scl-a),1.0);
 // --------------- default background color variable ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
   --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
